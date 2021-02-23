@@ -49,19 +49,22 @@ class PascalVocWriter:
             top.set('verified', 'yes')
 
         folder = SubElement(top, 'folder')
-        folder.text = self.foldername
+        #folder.text = self.foldername
+        folder.text = 'products'
 
         filename = SubElement(top, 'filename')
         filename.text = self.filename
 
+        '''
         if self.localImgPath is not None:
             localImgPath = SubElement(top, 'path')
             localImgPath.text = self.localImgPath
-
+        '''
+        '''
         source = SubElement(top, 'source')
         database = SubElement(source, 'database')
         database.text = self.databaseSrc
-
+        '''
         size_part = SubElement(top, 'size')
         width = SubElement(size_part, 'width')
         height = SubElement(size_part, 'height')
