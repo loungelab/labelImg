@@ -156,7 +156,7 @@ Usage
 
 Steps (PascalVOC)
 ~~~~~~~~~~~~~~~~~
-
+0. make qt5py3 first :)
 1. Build and launch using the instructions above.
 2. Click 'Change default saved annotation folder' in Menu/File
 3. Click 'Open Dir'
